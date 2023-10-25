@@ -27,8 +27,7 @@ const NavigationComponent = () => {
 					</Link>
 					{currentUser ? (
 						<span className='nav-link' onClick={singOutCallback}>
-							{" "}
-							SIGN OUT{" "}
+							SIGN OUT
 						</span>
 						): (
 							<Link to='/auth' className="nav-link">
