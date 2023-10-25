@@ -3,7 +3,7 @@ import React from 'react';
 import {
 	createUserDocumentFromAuth,
 	signInWithGooglePopup
-} from "../../utils/firebase.utils";
+} from "../../utils/firebase/firebase.utils";
 import SignUpFormComponent from "../../components/sign-up-form/sign-up-form.component";
 
 
