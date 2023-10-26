@@ -1,6 +1,6 @@
 import {React, createContext, useState} from "react";
 
-const CartContext = createContext({
+export const CartContext = createContext({
 	isCartOpen: false,
 	setIsOpen: () => {}
 });
