@@ -14,7 +14,6 @@ const CartItemComponent = ({cartItem}) => {
 					{quantity} x ${price}
 				</span>
 			</div>
-		
 		</div>
 	);
 };
