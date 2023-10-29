@@ -1,7 +1,10 @@
 import React, {useContext} from "react";
-import "./product-card.styles.scss";
+
 import ButtonComponent from "../button/button.component";
 import {CartContext} from "../../contexts/cart.context";
+
+import "./product-card.styles.scss";
+
 const ProductCardComponent = ({product}) => {
 	const {name, price, imageUrl} = product;
 	const {addItemToCart} = useContext(CartContext);
