@@ -1,6 +1,8 @@
 import React from 'react';
+import {Outlet} from "react-router-dom";
 
-import CategoriesComponent from "../../components/categories/cagetories.component";
+import DirectoryComponent from "../../components/directory/directory.component";
+
 
 const HomeComponent = () => {
 	const categories = [
@@ -30,7 +32,12 @@ const HomeComponent = () => {
 			imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
 		},
 	];
-	return <CategoriesComponent categories={categories}/>;
+	return (
+		<div>
+			<DirectoryComponent categories={categories}/>
+			<Outlet/>
+		</div>
+	);
 };
 
 export default HomeComponent;
