@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import {UserProvider} from "./contexts/user.context";
-import {ProductProvider} from "./contexts/products.context";
 import {CartProvider} from "./contexts/cart.context";
 import {CategoriesProvider} from "./contexts/catagories.context";
 
