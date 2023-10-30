@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useState} from "react";
 
 import {
 	createAuthUserWithEmailAndPassword,
@@ -59,7 +59,7 @@ const SignUpFormComponent = () => {
 			<span>Sign up with your email and password</span>
 			<form onSubmit={handleSubmit}>
 				<FormInputComponent
-					label='Display Name'
+					label='Full Name'
 					type='text'
 					required
 					onChange={handleChange}

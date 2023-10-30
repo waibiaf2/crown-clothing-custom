@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CategoriesComponent from "../../components/categories/cagetories.component";
 
 const HomeComponent = () => {
