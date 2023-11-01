@@ -1,6 +1,7 @@
 import React from "react";
 
 import {DirectoryContainer} from "./directory.styles";
+
 import DirectoryItemComponent from "../directory-item/directory-item.component";
 
 const DirectoryComponent = ({categories}) => {
