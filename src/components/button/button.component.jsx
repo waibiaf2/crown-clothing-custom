@@ -28,18 +28,4 @@ const ButtonComponent = ({children, buttonType, ...otherProps}) => {
 	</CustomButton>
 }
 
-/*const ButtonComponent = ({children, buttonType, ...otherProps}) => {
-	
-	
-	return (
-		<button
-			className={`button-container ${BUTTON_TYPES_CLASSES[buttonType]}`}
-			{...otherProps}
-		>
-			{ isGoogleButton ? <FcGoogle className="icon"/>: '' }
-			{children}
-		</button>
-	);
-};*/
-
 export default ButtonComponent;
