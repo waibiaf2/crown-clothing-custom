@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import "./sign-in-form.styles.scss";
 
 import FormInputComponent from "../form-input/form-input.component";
-import ButtonComponent from "../button/button.component";
+import ButtonComponent, {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
 import {
 	signInAuthUserWithEmailAndPassword,
@@ -76,7 +76,11 @@ const SignInFormComponent = () => {
 				/>
 				<div className='buttons-container'>
 					<ButtonComponent type='submit'>Sign In</ButtonComponent>
-					<ButtonComponent type='button' buttonType='google' onClick={signInWithGoogle}>
+					<ButtonComponent
+						type='button'
+						buttonType={BUTTON_TYPE_CLASSES.google}
+						onClick={signInWithGoogle}
+					>
 						Google sign in
 					</ButtonComponent>
 				</div>
