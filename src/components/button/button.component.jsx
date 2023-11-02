@@ -1,28 +1,31 @@
 import React from 'react';
-
 import {FcGoogle} from "react-icons/fc";
 
+import {
+	BaseButton,
+	GoogleSignInButton,
+	InvertedButton
+} from "./button.styles";
 
-
-import './button.styles.scss';
-
-const BUTTON_TYPES_CLASSES = {
+export const BUTTON_TYPE_CLASSES = {
+	base: "base",
 	google: 'google-sign-in',
-	inverted: 'inverted'
+	inverted: 'inverted',
 }
 
+const getButton = (buttonType= BUTTON_TYPE_CLASSES.base) => ({
+	[BUTTON_TYPE_CLASSES.base]: BaseButton,
+	[BUTTON_TYPE_CLASSES.google]: GoogleSignInButton,
+	[BUTTON_TYPE_CLASSES.inverted]: InvertedButton,
+}[buttonType]);
+
 const ButtonComponent = ({children, buttonType, ...otherProps}) => {
-	const isGoogleButton = BUTTON_TYPES_CLASSES[buttonType] === 'google-sign-in'
+	const CustomButton = getButton(buttonType);
 	
-	return (
-		<button
-			className={`button-container ${BUTTON_TYPES_CLASSES[buttonType]}`}
-			{...otherProps}
-		>
-			{ isGoogleButton ? <FcGoogle className="icon"/>: '' }
-			{children}
-		</button>
-	);
-};
+	return <CustomButton {...otherProps}>
+		{ buttonType === BUTTON_TYPE_CLASSES.google ? <FcGoogle className="icon"/>: '' }
+		{children}
+	</CustomButton>
+}
 
 export default ButtonComponent;
