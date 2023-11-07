@@ -102,7 +102,6 @@ export const CartProvider = ({children}) => {
 	const removeItemFromCart = (cartItemToRemove) => {
 		const newCartItems = removeCartItem(cartItems, cartItemToRemove);
 		updateCartItemsReducer(newCartItems);
-		
 	};
 	
 	const clearItemFromCart = (cartItemToClear) => {
