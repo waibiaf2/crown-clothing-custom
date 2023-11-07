@@ -3,6 +3,7 @@ import React from "react";
 import {DirectoryContainer} from "./directory.styles";
 
 import DirectoryItemComponent from "../directory-item/directory-item.component";
+import {Link} from "react-router-dom";
 
 const DirectoryComponent = ({categories}) => {
 	return (
