@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.81821cff.css",
-    "main.js": "/static/js/main.b758a7fa.js",
-    "static/js/787.e6a5a244.chunk.js": "/static/js/787.e6a5a244.chunk.js",
-    "static/media/shopping-bag.svg": "/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
-    "static/media/crown.svg": "/static/media/crown.207ae289b221bfaca0108507f9bb2f85.svg",
-    "index.html": "/index.html",
-    "main.81821cff.css.map": "/static/css/main.81821cff.css.map",
-    "main.b758a7fa.js.map": "/static/js/main.b758a7fa.js.map",
-    "787.e6a5a244.chunk.js.map": "/static/js/787.e6a5a244.chunk.js.map"
+    "main.css": "/crown-clothing-custom/static/css/main.81821cff.css",
+    "main.js": "/crown-clothing-custom/static/js/main.cd3182f3.js",
+    "static/js/787.e6a5a244.chunk.js": "/crown-clothing-custom/static/js/787.e6a5a244.chunk.js",
+    "static/media/shopping-bag.svg": "/crown-clothing-custom/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
+    "static/media/crown.svg": "/crown-clothing-custom/static/media/crown.207ae289b221bfaca0108507f9bb2f85.svg",
+    "index.html": "/crown-clothing-custom/index.html",
+    "main.81821cff.css.map": "/crown-clothing-custom/static/css/main.81821cff.css.map",
+    "main.cd3182f3.js.map": "/crown-clothing-custom/static/js/main.cd3182f3.js.map",
+    "787.e6a5a244.chunk.js.map": "/crown-clothing-custom/static/js/787.e6a5a244.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81821cff.css",
-    "static/js/main.b758a7fa.js"
+    "static/js/main.cd3182f3.js"
   ]
 }
