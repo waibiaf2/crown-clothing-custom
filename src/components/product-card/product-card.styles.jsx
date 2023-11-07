@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-/*TODO: Deal with styling the image*/
-
 export const Footer = styled.div`
   width: 100%;
   height: 5%;
