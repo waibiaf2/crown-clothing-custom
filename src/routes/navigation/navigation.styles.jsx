@@ -29,21 +29,3 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
 `;
-
-/*
-.navigation {
-	
-	
-	.logo-container {
-	
-	}
-	
-	.nav-links-container {
-		
-		
-		.nav-link {
-		
-		}
-	}
-}
-*/

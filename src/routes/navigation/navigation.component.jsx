@@ -37,9 +37,9 @@ const NavigationComponent = () => {
 					</NavLink>
 					{
 						currentUser ? (
-							<span className="nav-link" onClick={singOutCallback}>
+							<NavLink to='#' className="nav-link" onClick={singOutCallback}>
 								SIGN OUT
-							</span>
+							</NavLink>
 						) : (
 							<NavLink to="/auth" className="nav-link">
 								SIGN IN
