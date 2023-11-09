@@ -5,7 +5,6 @@ import {
 	Body,
 	DirectoryItemContainer
 } from "./directory-item.styles";
-import {Link} from "react-router-dom";
 
 const DirectoryItemComponent = ({category}) => {
 	const {imageUrl, title} = category;
