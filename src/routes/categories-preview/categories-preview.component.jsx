@@ -6,7 +6,6 @@ import {useSelector} from "react-redux";
 import {selectCategoriesMap} from "../../store/categories/categories.selector";
 
 const  CategoriesPreviewComponent = () => {
-	// const { categoriesMap } = useContext(CategoriesContext);
 	const categoriesMap = useSelector(selectCategoriesMap);
 	
 	return (

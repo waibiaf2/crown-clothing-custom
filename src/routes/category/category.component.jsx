@@ -1,4 +1,4 @@
-import React, {Fragment, useContext, useEffect, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 
@@ -16,13 +16,16 @@ const CategoryComponent = () => {
 		setProducts(categoriesMap[category]);
 	}, [category, categoriesMap]);
 	
+	console.log(products);
+	
 	return (
 		<Fragment>
 			<CategoryTitle>{category.toUpperCase()} </CategoryTitle>
 			<CategoryContainer>
-				{products.map((product) => (
-					<ProductCardComponent key={product.id} product={product}/>
-				))}
+				{
+					products.map((product) =>
+						<ProductCardComponent key={product.id} product={product}/>
+				)}
 			</CategoryContainer>
 		</Fragment>
 	);
