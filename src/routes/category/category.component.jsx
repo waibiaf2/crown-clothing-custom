@@ -2,9 +2,9 @@ import React, {Fragment, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 
-import ProductCardComponent from "../../components/product-card/product-card.component";
-
 import {selectCategoriesMap} from "../../store/categories/categories.selector";
+
+import ProductCardComponent from "../../components/product-card/product-card.component";
 
 import {CategoryContainer, CategoryTitle} from "./category.styles";
 const CategoryComponent = () => {
@@ -15,8 +15,6 @@ const CategoryComponent = () => {
 	useEffect(() => {
 		setProducts(categoriesMap[category]);
 	}, [category, categoriesMap]);
-	
-	console.log(products);
 	
 	return (
 		<Fragment>
